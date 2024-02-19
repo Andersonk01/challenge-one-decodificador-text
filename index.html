@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Decodificador de texto</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container-main">
+        <h1 class="heading-main">Decodificador</h1>
+        <textarea
+          id="textoInput"
+          class="textarea-main"
+          rows="15"
+          placeholder="Digite seu texto aqui"
+          rezise="none"
+          maxlength="900"
+        ></textarea>
+      </div>
+
+      <div class="footer">
+        <div class="container-footer">
+          <p class="text-footer">❗ Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <button class="button-encode btn-hover" onclick="criptografar()">
+          Criptografar
+        </button>
+        <button class="button-decode btn-hover" onclick="descriptografar()">
+          Descriptografar
+        </button>
+      </div>
+    </main>
+
+    <div class="sidebar">
+      <div class="container-sidebar">
+        <p class="title-sidebar">Nenhuma mensagem encontrada</p>
+        <p class="sidebar-text textoOutput"></p>
+      </div>
+      <button class="button-sidebar" onclick="copy()">Copiar</button>
+    </div>
+  </body>
+</html>
+
+<!-- Digite um texto que você deseja criptografar ou descriptografar. -->
